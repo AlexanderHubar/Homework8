@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework8 jQuery | Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<form id="form" action="" method="post" name="briefly">
+  <ul>
+    <li class="large">
+      <label for="name">Имя:
+        <input id="name" class="large" type="text" name="name">
+      </label>
+    </li>
+    <li class="large">
+      <label for="surname">Фамилия:
+        <input id="surname" class="large" type="text" name="surname">
+      </label>
+    </li>
+    <li>
+      Пол:
+      <label for="Male">
+        <input id="Male" type="radio" name="gender" value="Male" checked=""> Мужской
+      </label>
+      <label for="Female">
+        <input id="Female" type="radio" name="gender" value="Female"> Женский
+      </label>
+    </li>
+    <li>
+      <label for="age">Возраст:
+        <input id="age" type="text" name="age" style=" width: 50px">
+        <span> лет</span>
+      </label>
+    </li>
+    <li>
+      <label for="cars">Ваша машина:
+        <select id="cars" name="car">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </label>
+    </li>
+    <li>
+      <ul>
+        <p>Что вы делаете на выходных: </p>
+        <li>
+          <label for="sleep">
+            <input id="sleep" type="checkbox" name="affairs" value="sleep"> Сплю
+          </label>
+        </li>
+        <li>
+          <label for="wallking">
+            <input id="wallking" type="checkbox" name="affairs" value="wallking"> Гуляю с друзьями
+          </label>
+        </li>
+        <li>
+          <label for="fishing">
+            <input id="fishing" type="checkbox" name="affairs" value="fishing"> Хожу на рыбалку
+          </label>
+        </li>
+        <li>
+          <label for="gaming">
+            <input id="gaming" type="checkbox" name="affairs" value="gaming"> Играю в игры
+          </label>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <p>Сколько книг Вы прочитали за свою жизнь: </p>
+        <li>
+          <label for="to_ten">
+            <input id="to_ten" type="radio" name="books" value="to_ten"> 0-10
+          </label>
+        </li>
+        <li>
+          <label for="to_twenty">
+            <input id="to_twenty" type="radio" name="books" value="to_twenty"> 11-20
+          </label>
+        </li>
+        <li>
+          <label for="to_fifty">
+            <input id="to_fifty" type="radio" name="books" value="to_fifty"> 21-50
+          </label>
+        </li>
+        <li>
+          <label for="more_fifty">
+            <input id="more_fifty" type="radio" name="books" value="more_fifty"> 50+
+          </label>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <label for="spam">
+        Получать сообщения от нашего сайта
+        <input id="spam" type="checkbox" name="spam" checked>
+      </label>
+    </li>
+    </ul>
+    <button type="submit">Submit</button>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
